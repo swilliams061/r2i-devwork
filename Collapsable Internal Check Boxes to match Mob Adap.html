@@ -1,0 +1,421 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<style>
+	.main{
+	text-align:right;
+	padding-right:10px;
+	}
+	.subheader{
+	text-align:right;
+	padding-right:10px;
+	}
+	.collapsed{
+	display:none;
+	}
+	li.even{
+	background: rgba(0, 0, 0, 0.1);
+	}
+	
+	ul.c1{
+		background: rgba(0, 0, 0, 0.1);
+	}
+</style>
+<script>
+	$(document).ready(function () {
+	
+	        if ($('.check1').is(':checked')) {
+				console.log("clickedA");
+	            $(".c0").slideDown();
+	        } else {
+				 $(this).parent().find('input[type=checkbox][level="subchild"]').prop('checked', false);
+	           	$(".c0").slideUp();
+	        }
+			
+			if ($('.check2').is(':checked')) {
+				console.log("clicked");
+	            $(".c1").slideDown();
+	        } else {
+				 $(this).parent().find('input[type=checkbox][level="subchild2"]').prop('checked', false);
+	           	$(".c1").slideUp();
+	        }
+			
+	
+	    $('.a1').on('click',function () {
+			
+	        if ($('.check1').is(':checked')) {
+				console.log("clickedA");
+	            $(".c0").slideDown();
+	        } else {
+				 $(this).parent().find('input[type=checkbox][level="subchild"]').prop('checked', false);
+	           	$(".c0").slideUp();
+	        }
+	    });
+	    
+		$('.a2').on('click',function () {
+			
+	        if ($('.check2').is(':checked')) {
+				console.log("clicked");
+	            $(".c1").slideDown();
+	        } else {
+				 $(this).parent().find('input[type=checkbox][level="subchild2"]').prop('checked', false);
+	           	$(".c1").slideUp();
+	        }
+	    });
+	    
+	    
+	});
+</script>
+
+<!-- Question text header -->
+<div class="tag-header">
+	<h2>Which of the following services does your spa offer?  Please include only services and/or products that are offered on-site at the spa.</h2>
+	<p>Please select ALL that apply</p>
+</div>
+<div id="qwrap">
+	<ul class="body">
+		<li class="odd item a1">
+			<label class="answeroption" title="Massage services">
+			<span class="radioContainer">
+			<input class="check1" id="v_275" type="checkbox" value="1" name="v_275"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Massage services</span>
+			</span>
+			</label>
+		</li>
+		
+		<ul class="c0 collapsed">
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Aromatherapy Massage">
+				<span class="radioContainer">
+				<input id="v_286" type="checkbox" level="subchild" value="1" name="v_286"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Aromatherapy Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Couples Massage">
+				<span class="radioContainer">
+				<input id="v_287" type="checkbox" level="subchild" value="1" name="v_287"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Couples Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Deep Tissue/Sports Massage">
+				<span class="radioContainer">
+				<input id="v_288" type="checkbox" level="subchild" value="1" name="v_288"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Deep Tissue/Sports Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Pregnancy Massage">
+				<span class="radioContainer">
+				<input id="v_289" type="checkbox" level="subchild" value="1" name="v_289"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Pregnancy Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Reflexology Massage">
+				<span class="radioContainer">
+				<input id="v_290" type="checkbox" level="subchild" value="1" name="v_290"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Reflexology Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Shiatsu Massage">
+				<span class="radioContainer">
+				<input id="v_291" type="checkbox" level="subchild" value="1" name="v_291"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Shiatsu Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Stone Massage">
+				<span class="radioContainer">
+				<input id="v_292" type="checkbox" level="subchild" value="1" name="v_292"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Stone Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Swedish Massage">
+				<span class="radioContainer">
+				<input id="v_293" type="checkbox" level="subchild" value="1" name="v_293"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Swedish Massage</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Thai Massage">
+				<span class="radioContainer">
+				<input id="v_294" type="checkbox" level="subchild" value="1" name="v_294"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Thai Massage</span>
+				</span>
+				</label>
+			</li>
+		</ul>
+		
+		<li class="even item">
+			<label class="answeroption" title="Hydrotherapy services">
+			<span class="radioContainer">
+			<input id="v_276" type="checkbox" value="1" name="v_276"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Hydrotherapy services</span>
+			</span>
+			</label>
+		</li>
+		<li class="odd item">
+			<label class="answeroption" title="Body services (i.e. wraps, scrubs, etc.)">
+			<span class="radioContainer">
+			<input id="v_277" type="checkbox" value="1" name="v_277"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Body services (i.e. wraps, scrubs, etc.)</span>
+			</span>
+			</label>
+		</li>
+		<li class="even item">
+			<label class="answeroption" title="Skin care services (i.e. facials, etc.)">
+			<span class="radioContainer">
+			<input id="v_278" type="checkbox" value="1" name="v_278"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Skin care services (i.e. facials, etc.)</span>
+			</span>
+			</label>
+		</li>
+		<li class="odd item">
+			<label class="answeroption" title="Salon services (i.e. hair styling, make-up, nails, waxing, etc.)">
+			<span class="radioContainer">
+			<input id="v_279" type="checkbox" value="1" name="v_279"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Salon services (i.e. hair styling, make-up, nails, waxing, etc.)</span>
+			</span>
+			</label>
+		</li>
+		<li class="even item a2">
+			<label class="answeroption" title="Complementary/alternative therapies or mind, body & spirit programs (i.e. acupuncture, reiki, yoga, tai chi etc.)">
+			<span class="radioContainer">
+			<input id="v_280" class="check2" type="checkbox" value="1" name="v_280"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Complementary/alternative therapies or mind, body & spirit programs (i.e. acupuncture, reiki, yoga, tai chi etc.)</span>
+			</span>
+			</label>
+		</li>
+		
+		<ul class="c1 collapsed">
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Acupuncture">
+				<span class="radioContainer">
+				<input id="v_295" type="checkbox" level="subchild2" value="1" name="v_295"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Acupuncture</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Allergy treatments">
+				<span class="radioContainer">
+				<input id="v_296" type="checkbox" level="subchild2" value="1" name="v_296"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Allergy treatments</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Ayurvedic Treatments">
+				<span class="radioContainer">
+				<input id="v_297" type="checkbox" level="subchild2" value="1" name="v_297"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Ayurvedic Treatments</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Chiropractic therapy">
+				<span class="radioContainer">
+				<input id="v_298" type="checkbox" level="subchild2" value="1" name="v_298"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Chiropractic therapy</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Energy work">
+				<span class="radioContainer">
+				<input id="v_299" type="checkbox" level="subchild2" value="1" name="v_299"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Energy work</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Reiki">
+				<span class="radioContainer">
+				<input id="v_300" type="checkbox" level="subchild2" value="1" name="v_300"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Reiki</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Meditation or relaxation classes">
+				<span class="radioContainer">
+				<input id="v_301" type="checkbox" level="subchild2" value="1" name="v_301"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Meditation or relaxation classes</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Tai chi">
+				<span class="radioContainer">
+				<input id="v_302" type="checkbox" level="subchild2" value="1" name="v_302"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Tai chi</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Yoga">
+				<span class="radioContainer">
+				<input id="v_303" type="checkbox" level="subchild2" value="1" name="v_303"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Yoga</span>
+				</span>
+				</label>
+			</li>
+			<li class="odd item" style="padding-left:20px">
+				<label class="answeroption" title="Other (please specify)">
+				<span class="radioContainer">
+				<input id="v_304" type="checkbox" level="subchild2" value="1" name="v_304"/>
+				<span class="checkbox"></span>
+				<span class="labeltext">Other (please specify)</span>
+				</span>
+				<span class="text defaultWidth" style="" title="">
+				<input name="v_305" id="v_305" class="text valid" maxlength="255" type="text" value="" onclick="return false;">
+				<span class="accessibility"></span>
+				</span>	
+				</label>
+			</li>
+		</ul>
+		<li class="odd item">
+			<label class="answeroption" title="Answer option 7">
+			<span class="radioContainer">
+			<input id="v_281" type="checkbox" value="1" name="v_281"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Healthy living programs (i.e. smoking cessation, weight loss, etc.) </span>
+			</span>
+			</label>
+		</li>
+		<li class="even item">
+			<label class="answeroption" title="Answer option 8">
+			<span class="radioContainer">
+			<input id="v_282" type="checkbox" value="1" name="v_282"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Fitness or sports services</span>
+			</span>
+			</label>
+		</li>
+		<li class="odd item">
+			<label class="answeroption" title="Answer option 9">
+			<span class="radioContainer">
+			<input id="v_283" type="checkbox" value="1" name="v_283"/>
+			<span class="checkbox"></span>
+			<span class="labeltext">Medically supervised services (i.e. botox, dentistry, dermatology, etc.)</span>
+			</span>
+			</label>
+		</li>
+	</ul>
+</div>
+<script>
+	var checkboxes = [
+	"v_275",
+"v_276",
+"v_277",
+"v_278",
+"v_279",
+"v_280",
+"v_281",
+"v_282",
+"v_283",
+"v_284",
+"v_285",
+"v_286",
+"v_287",
+"v_288",
+"v_289",
+"v_290",
+"v_291",
+"v_292",
+"v_293",
+"v_294",
+"v_295",
+"v_296",
+"v_297",
+"v_298",
+"v_299",
+"v_300",
+"v_301",
+"v_302",
+"v_303",
+"v_304"
+
+	];
+	
+	var qbcheckboxes = [
+	"#v_275#",
+"#v_276#",
+"#v_277#",
+"#v_278#",
+"#v_279#",
+"#v_280#",
+"#v_281#",
+"#v_282#",
+"#v_283#",
+"#v_284#",
+"#v_285#",
+"#v_286#",
+"#v_287#",
+"#v_288#",
+"#v_289#",
+"#v_290#",
+"#v_291#",
+"#v_292#",
+"#v_293#",
+"#v_294#",
+"#v_295#",
+"#v_296#",
+"#v_297#",
+"#v_298#",
+"#v_299#",
+"#v_300#",
+"#v_301#",
+"#v_302#",
+"#v_303#",
+"#v_304#"
+	];
+	
+	for(var i = 0; i < checkboxes.length; i++){
+	
+	console.log(checkboxes[i]);
+	
+		if(qbcheckboxes[i] == 1){
+		console.log("yo");
+			$('#' + checkboxes[i]).prop('checked', true);
+		}else{
+			$('#' + checkboxes[i]).prop('checked', false);
+		}	
+	
+	}
+		
+</script>
